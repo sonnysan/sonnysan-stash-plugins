@@ -12,7 +12,7 @@ TAG_MAP = {}
 stash = StashInterface(FRAGMENT["server_connection"])
 
 def fetch_all_tags_missing_stash_db_id(endpoint):
-    log.info("Fetching all tags missing Stash DB ID....")
+    log.info("Fetching all tags missing Stash ID....")
     tag_filter = {
         "stash_id_endpoint": {
             "endpoint": endpoint,
