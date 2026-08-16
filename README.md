@@ -6,56 +6,11 @@ The plugins focus on improving **metadata management, organization, and consiste
 
 ## 📦 Plugins
 
-### 🔗 Merge Duplicate Tag Aliases
+### 🔗 [Merge Duplicate Tag Aliases](./MergeDuplicateTagAliases/README.md)
 
-**Merge Duplicate Tag Aliases** helps keep your Stash tags consistent with the tags defined by StashDB and other primary metadata sources.
+Finds tags that are aliases of other tags on StashDB or your primary metadata source.
 
-The plugin checks existing tags for known alias relationships. When multiple tags are recognized as aliases of a primary tag, the plugin identifies the canonical tag and allows the aliases to be merged into it.
-
-This is useful for cleaning up an existing library where different tag names represent the same concept.
-
-### 💡 Example
-
-Suppose your library contains several tags referring to the same concept:
-
-```text
-60 FPS
-60 Frames
-60FPS
-60p
-High Frame Rate
-```
-
-Your metadata source may define **60 FPS** as the primary tag, with the others recognized as aliases:
-
-```text
-60 Frames       ──┐
-60FPS           ──┤
-60p             ──┼──► 60 FPS
-High Frame Rate ──┤      ⭐ Primary
-                 ──┘
-```
-
-The plugin detects these relationships and lets you merge the alias tags into the primary **60 FPS** tag.
-
-After the merge, your library contains the canonical tag:
-
-```text
-🏷️ 60 FPS
-```
-
-This makes it easier to maintain consistent tags and match your local library with the terminology used by StashDB or another primary metadata source.
-
-### ✨ Features
-
-* 🔍 Detect tags that have known aliases
-* 🌐 Check alias relationships from StashDB
-* 🔗 Use other configured primary Stash sources
-* 🎯 Identify the corresponding primary tag
-* 🧩 Handle multiple aliases for a single tag
-* 🔄 Merge alias tags into the primary tag
-* 🧹 Reduce duplicate and inconsistent tags
-* 📚 Keep local tagging aligned with external metadata sources
+It helps you merge duplicate/alternate tag names into the correct primary tag, keeping your Stash library clean and consistent.
 
 ## 🚀 Installation
 
