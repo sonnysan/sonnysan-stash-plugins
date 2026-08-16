@@ -28,10 +28,8 @@ For more information, see the [Stash plugin documentation](https://docs.stashapp
 ## 🔗 Plugin Source
 
 ```text
-https://sonnysan.github.io/<repository-name>/index.yml
+https://sonnysan.github.io/sonnysan-stash-plugins/index.yml
 ```
-
-Replace `<repository-name>` with the name of this repository.
 
 ## 👨‍💻 About
 
