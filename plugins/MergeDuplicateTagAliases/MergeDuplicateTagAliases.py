@@ -4,7 +4,6 @@ from stashapi.stashapp import StashInterface
 import stashapi.log as log
 
 FRAGMENT = json.loads(sys.stdin.read())
-MODE = FRAGMENT["args"]["mode"]
 
 # Initialize connection to Stash
 stash = StashInterface(FRAGMENT["server_connection"])
