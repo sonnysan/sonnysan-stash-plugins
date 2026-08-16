@@ -1,4 +1,4 @@
-# 🔗 Merge Duplicate Tag Aliases
+### 🚧 Merge Duplicate Tag Aliases (Development in progress ....)
 
 A Stash plugin that helps clean up tag aliases by finding tags in your library that are aliases of a primary tag on **StashDB** or another configured primary Stash source.
 
