@@ -6,7 +6,7 @@ The plugins focus on improving **metadata management, organization, and consiste
 
 ## 📦 Plugins
 
-### 🔗 [Merge Duplicate Tag Aliases](./MergeDuplicateTagAliases/README.md)
+### 🔗 [Merge Duplicate Tag Aliases](./MergeDuplicateTagAliases/plugins/README.md)
 
 Finds tags that are aliases of other tags on StashDB or your primary metadata source.
 
