@@ -1,0 +1,22 @@
+name: "Merge Duplicate Tag Aliases"
+description: "Finds tags whose names match other tags' aliases and merges them"
+version: "1.0.0"
+exec:
+  - python
+  - "{pluginDir}/MergeDuplicateTagAliases.py"
+settings:
+  - name: "dry_run"
+    label: "Dry Run"
+    description: "Log matches and changes without modifying the database"
+    type: BOOLEAN
+    default: true
+  - name: "stash_src"
+    label: "Stash Source Endpoint"
+    description: "Stash GraphQL API source to comapre tag alias. Default to https://stashdb.org/graphql"
+    type: STRING
+    default: https://stashdb.org/graphql
+tasks:
+  - name: "Merge Tags"
+    description: "Scan tags and execute the merge routine"
+    execArgs:
+      - "merge_tags"

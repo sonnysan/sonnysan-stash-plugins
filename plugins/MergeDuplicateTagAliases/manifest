@@ -1,0 +1,15 @@
+id: renamerOnUpdate
+name: renamerOnUpdate
+metadata:
+  description: Rename/move filename based on a template.
+version: 2.5.0-0eec56a
+date: "2024-03-03 02:37:25"
+requires: []
+source_repository: https://stashapp.github.io/CommunityScripts/stable/index.yml
+files:
+- .gitignore
+- renamerOnUpdate_config.py
+- renamerOnUpdate.yml
+- renamerOnUpdate.py
+- README.md
+- log.py
