@@ -3,14 +3,17 @@ import json
 from stashapi.stashapp import StashInterface
 import stashapi.log as log
 
+FRAGMENT = json.loads(sys.stdin.read())
+MODE = FRAGMENT["args"]["mode"]
+
+# Initialize connection to Stash
+stash = StashInterface(FRAGMENT["server_connection"])
+
 def merge_duplicate_aliases(dry_run):
     if dry_run:
         log.info("DRY RUN MODE ENABLED. No changes will be saved to Stash.")
     else:
         log.info("LIVE MODE ENABLED. Changes will be written to the database.")
-
-    # Initialize connection to Stash
-    stash = StashInterface()
     
     try:
         tags = stash.find_tags(fragment="id name aliases")

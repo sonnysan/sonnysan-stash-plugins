@@ -9,12 +9,10 @@ settings:
     displayName: "Dry Run"
     description: "Log matches and changes without modifying the database"
     type: boolean
-    default: true
   stash_src:
     displayName: "Stash Source Endpoint"
     description: "Stash GraphQL API source to compare tag alias. Defaults to https://stashdb.org/graphql"
     type: string
-    default: "https://stashdb.org/graphql"
 tasks:
   - name: "Merge Tags"
     description: "Scan tags and execute the merge routine"
